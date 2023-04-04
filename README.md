@@ -19,7 +19,7 @@ $ mvn spring-boot:run
 
 ## API List
 
-Daftar Api terdapat pada file json collection dengan keterangan sebagai berikut
+Daftar Api terdapat pada file json postman collection dengan keterangan sebagai berikut
 
 ```
 Get All Books --> mengambil semua data buku
