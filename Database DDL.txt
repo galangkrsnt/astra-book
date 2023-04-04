@@ -1,0 +1,19 @@
+-- astra.book definition
+
+-- Drop table
+
+-- DROP TABLE astra.book;
+
+CREATE TABLE astra.book (
+	id varchar(255) NOT NULL,
+	judul varchar(255) NULL,
+	peminjam varchar(255) NULL,
+	penerbit varchar(255) NULL,
+	pengarang varchar(255) NULL,
+	status varchar(255) NULL,
+	tebal_buku varchar(255) NULL,
+	tgl_kembali varchar(255) NULL,
+	tgl_pinjam varchar(255) NULL,
+	tgl_terbit varchar(255) NULL,
+	CONSTRAINT book_pkey PRIMARY KEY (id)
+);

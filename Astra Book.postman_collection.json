@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "cacc5124-b781-47c2-bfe3-334ab7c44df2",
+		"name": "Astra Book",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16546971"
+	},
+	"item": [
+		{
+			"name": "Get All Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/astra/book/get-all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"astra",
+						"book",
+						"get-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book by Status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/astra/book/get-by-status",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"astra",
+						"book",
+						"get-by-status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idBuku\":\"A0001\",\r\n    \"judul\":\"Harry Potter dan Batu Bertuah\",\r\n    \"pengarang\":\"J.K Rowling\",\r\n    \"penerbit\":\"Gramedia\",\r\n    \"tanggalTerbit\":\"29 June 1997\",\r\n    \"tebalBuku\":\"384 halaman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/astra/book/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"astra",
+						"book",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/astra/book/delete/A0001",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"astra",
+						"book",
+						"delete",
+						"A0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Data Buku",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idBuku\":\"A0001\",\r\n    \"judul\":\"Harry Potter dan Batu Bertuah\",\r\n    \"pengarang\":\"J.K Rowling\",\r\n    \"penerbit\":\"Gramedia\",\r\n    \"tanggalTerbit\":\"29 June 1997\",\r\n    \"tebalBuku\":\"500 halaman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/astra/book/update-book",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"astra",
+						"book",
+						"update-book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Status Buku",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idBuku\":\"A0001\",\r\n    \"peminjam\":\"Donny\",\r\n    \"tanggalPinjam\":\"13 Oct 2022\",\r\n    \"tanggalKembali\":\"20 Oct 2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/astra/book/update-status",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"astra",
+						"book",
+						"update-status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
