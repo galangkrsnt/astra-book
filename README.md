@@ -1,4 +1,3 @@
-# Tecnical Test AGIT Galang Krisnanto
 
 ## Installation
 
